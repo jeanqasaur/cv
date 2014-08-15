@@ -1,0 +1,167 @@
+%% start of file `template_en.tex'.
+%% Copyright 2006-1008 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue, modroman]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+\usepackage[sc]{mathpazo}
+\linespread{1.05}
+\usepackage[T1]{fontenc}
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+\setlength{\topmargin}{-0.7in}
+\usepackage{calc}
+\setlength{\textheight}{\textheight+0.5in}
+\usepackage{layout}
+
+% personal data
+\firstname{Jean}
+\familyname{Yang}
+%\title{Resumé title (optional)}               % optional, remove the line if not wanted
+\address{32 Vassar Street, 32-G714}{Cambridge, MA 02139}    % optional, remove the line if not wanted
+%\mobile{mobile (optional)}                    % optional, remove the line if not wanted
+%\phone{phone (optional)}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{jeanyang [at] csail [dot] mit [dot] edu}                      % optional, remove the line if not wanted
+\extrainfo{\footnotesize \url{jeanyang.com}} % optional, remove the line if not wanted
+%\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+%\section{Research interests}
+%\cvline{}{Programming language design and program synthesis.}
+
+\section{Education}
+\cventry{2010--present}{Ph.D. computer science}{Massachusetts Institute of Technology}
+  {Cambridge, MA}{USA}
+    {Advised by Armando Solar-Lezama. Interested in programming languages and security. Thesis: ``A Framework for Automatically Enforcing Information Flow Policies.''}
+\cventry{2008--2010}{M.S. computer science}{Massachusetts Institute of Technology}
+  {Cambridge, MA}{USA}
+  {Advised by Armando Solar-Lezama. Thesis: ``Specification-Enhanced Programming.''}
+\cventry{2004--2008}{A.B. computer science}{Harvard University}
+  {Cambridge, MA}{USA}
+  {Graduated \emph{Magna Cum Laude}. Senior thesis: ``Safe Dynamic Dispatch, or How to Pickle with Class.''}
+\cventry{1997--2004}{Secondary school}{The Ellis School}{Pittsburgh, PA}{USA}
+  {}
+
+\section{Publications}
+\cvline{}{Nikhil Swamy, Juan Chen, C\'{e}dric Fournet, Pierre-Yves Strub, Karthikeyan Bhargavan, and Jean Yang. \textbf{Secure distributed programming with value-dependent types}. Journal of Fucntional Programming, 2013.}{}
+\cvline{}{Thomas H. Austin, Jean Yang, Cormac Flanagan, and Armando Solar-Lezama. \textbf{Faceted Execution of Policy-Agnostic Programs}. Programming Languages and Security 2013.}{}
+\cvline{}{Jean Yang, Kuat Yessenov, and Armando Solar-Lezama.  \textbf{A Language for Automatically Enforcing Privacy Policies}.  Principles of Programming Languages 2012.}{}
+\cvline{}{Jean Yang and Chris Hawblitzel.  \textbf{Safe to the Last Instruction: Automated Verification of a Type-Safe Operating System}.  Communications of the Association for Computing Machinery, December 2011.}
+\cvline{}{Nikhil Swamy, Juan Chen, C\'{e}dric Fournet, Pierre-Yves Strub, Karthikeyan Bharagavan, and Jean Yang.  \textbf{Secure Distributed Programming with Value-Dependent Types}.  International Conference on Functional Programming 2011.}{}
+\cvline{}{Jean Yang and Chris Hawblitzel.  \textbf{Safe to the Last Instruction: Automated Verification of a Type-Safe Operating System}.  Programming Languages Implementation and Design 2010.  \textbf{Best paper award.}}
+
+\section{Invited talks}
+\cvline{}{\textbf{Jeeves: A Language for Enforcing Privacy}. Facebook - Menlo Park (March 2012); Google - Mountain View (April 2012); University of California, Berkeley (April 2012); Brown University (June 2012); Tufts University (Colloquium, Dec. 2012).}{}
+\cvline{}{\textbf{A Language for Automatically Enforcing Privacy Policies}. New York University (April 2011); Google - New York (July 2011); Northeastern University (Dec. 2011); Harvard University (Dec. 2011).}{}
+
+\section{Academic honors}
+\cvlistitem{\textbf{Levine Fellowship}, 2014-2015.}
+\cvlistitem{\textbf{Facebook Fellowship}, 2012-2013.}
+\cvlistitem{\textbf{National Science Foundation Graduate Research Fellowship}, 2008-2011.}
+\cvlistitem{Member, \textbf{Phi Beta Kappa} honor society, inducted May 2008.}
+
+\section{Positions held}
+\subsection{Industry}
+\cventry{Summer 2012}{Software Engineering Intern}{Facebook, Inc.}{Menlo Park, CA}{}{Worked on experimental verification techniques for backend privacy.}
+\cventry{Summer 2008}{Software Engineering Intern}{Peerium, Inc.}{Cambridge, MA}
+  {}{Worked at start-up creating a dependently typed functional language written in Haskell.  Created parser for core language; wrote compiler optimizations; worked on GUI libraries.}
+\cventry{Summer 2007}{Software Engineering Intern}{Google, Inc.}{Santa Monica, CA}{}
+  {Completed standalone project on video search team using C++.  Received full-time offer.}
+\cventry{Summer 2005}{Software Development Intern}{Mellon Financial}{Pittsburgh, PA}
+  {}{Worked on data mapping and management project using SQL and ColdFusion.}
+
+\subsection{Research}
+\cventry{Summer 2010}{Research Intern, Programming Languages and Analysis Group}{Microsoft Research}{Redmond, WA}{}
+  {Worked on extending Fine, a security-typed language, to support secure marshalling and cryptographic proofs.}
+%\cventry{2009-2010}{Research Assistant}{MIT CSAIL}{Cambridge, MA}{}
+%  {Worked with Prof. Armando Solar-Lezama on a new programming model for shifting responsibility of tedious programming tasks to the system.}
+\cventry{Summer 2009}{Research Intern, Operating Systems Group}{Microsoft Research}{Redmond, WA}{}
+  {Worked on building an operating system kernel verified for type-safety using Boogie and C\#.}
+%\cventry{2008--2009}{Research Assistant}{MIT CSAIL}{Cambridge, MA}{}
+%  {Worked on programming languages projects with Prof. Saman Amarasinghe's compiler group.}
+\cventry{Summer 2006}{Research Intern}{Computational Biology Initiative, Harvard Medical School}{Boston, MA}{}
+  {Developed and implemented computational processes for tracing evolution and coevolution of presynaptic receptors.}
+
+\section{Teaching}
+\cventry{Fall 2012}{Recitation Instructor, Elements of Software Construction}{Massachusetts Institute of Technology}{}
+  {}{Designed and taught mini-curriculum for introducing Scala to undergraduate students in course teaching concepts using Java and Python.}
+\cventry{Fall 2010}{Teaching Assistant, Foundations of Program Analysis}{Massachusetts Institute of Technology}{}
+  {}{Designed and graded assignments and held recitations for graduate-level program analysis course.}
+\cventry{January 2010}{Instructor, C Memory Management and C++ Object-Oriented Programming}{Massachusetts Institute of Technology}{}
+  {}{Designed and co-taught a for-credit January-term course for over 100 undergraduates.  Prepared lectures and assignments; managed multiple graders; published materials on MIT's Open Courseware.}
+\cventry{January 2010}{Instructor, So You've Always Wanted to Learn Haskell?}{Massachusetts Institute of Technology}{}
+  {}{Designed and co-taught an January-term course introducing the Haskell language and its applications.}
+\cventry{Spring 2008}{Teaching Fellow, Principles of Programming Languages}{Harvard University}{}
+  {}{Helped with new course introducing programming languages concepts using the Coq proof assistant.  Effectiveness rating 4.6/5.0.  Received Certificate of Distinction in Teaching.}
+\cventry{Spring 2007}{Teaching Fellow, Introduction to Computer Science II}{Harvard University}{}{}
+  {Responsible for problem sets, exams, section, and office hours for course using Scheme and C++.  Effectiveness rating 4.6/5.0; nominated for Undergraduate Council's Levenson Teaching Prize.}
+\cventry{Fall 2006}{Teaching Fellow, Introduction to Formal Systems}{Harvard University}{}{}
+  {Responsible for problem sets, exams, section, and office hours for course on computational models and complexity.  Effectiveness rating 4.2/5.0.  Nominated for departmental teaching award.}
+\cventry{Fall 2005}{Course Assistant, Introduction to Calculus}{Harvard University}{}{}
+  {Graded problem sets and ran weekly problem session.  Effectiveness rating rating 4.4/5.0.}
+
+\section{Service}
+\cvline{}{\textbf{Conference Program Committees.} Principles of Programming Languages (POPL) 2015 Artifact Evaluation Committee; ML Workshop 2014.}
+\cvline{}{\textbf{MIT Programming Languages Seminar}. Started a weekly forum for professors and students to present ideas related to programming languages.  Ran seminar 2010-2011.}{}
+\cvline{}{\textbf{MIT Programming Languages/Software Engineering Research Off-site}. Started annual day-long off-site retreat with six research groups. Served on planning committee 2010 and 2011, advised planning of subsequent retreats.}{}
+\cvline{}{\textbf{Graduate Women at MIT}. Co-founded an institute-wide organization with 1500 members (as of spring 2012) and a budget of over \$20K.  Collaborated on developing constitution and mission, raising initial funding, establishing campus collaborations, and recruiting members.  Served as Executive Board member from 2009 to present and Planning Co-Chair for Spring Kick-off 2010 and Empowerment Conference 2011.}{}
+\cvline{}{\textbf{Harvard Computer Science task force}. Served as invited alumnus on fall 2009 task force of professors and students to improve department life for graduate and undergraduate students.}{}
+%\cvline{Harvard Google Ambassador}{Served as one of two student Google representatives 2007-2008.  Organized faculty lunches and an undergraduate advising event.}
+%\cvline{Harvard College Engineering Society}{Founding member 2005-2008; President 2006-2007.  Increased student-faculty interaction and sense of community in the School of Engineering and Applied Sciences by raising funds for and organizing social and advising events.}
+
+\section{Languages}
+\cvlanguage{English}{Fluent}{Lived in United States since childhood}
+\cvlanguage{Mandarin}{Fluent}{Native speaker}
+\cvlanguage{French}{Proficient}{Studied 7 years in secondary school}
+
+\section{Programming experience}
+\cvcomputer{Mainstream}{C, C++, Java, Python, Scala}{Logic}{Prolog}
+\cvcomputer{Functional}{Haskell, OCaml/SML, Scheme}{Assembly}{x86, MIPS}
+\cvcomputer{Verification}{BoogiePL}{Hardware}{Verilog}
+
+\section{Other interests}
+\cvline{}{Since fall 2013 I have been running \textbf{NeuWrite Boston}, a collaborative working group of scientists and writers. We meet regularly to workshop pieces and discuss how to improve the state of science communication.}{}
+
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+%\section{Extra 2}
+%\cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
+%\cvlistdoubleitem[\Neutral]{Item 2}{Item 5}
+%\cvlistdoubleitem[\Neutral]{Item 3}{}
+
+% Publications from a BibTeX file
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+%\clearpage
+%\layout
+\end{document}
+
+
+%% end of file `template_en.tex'.
