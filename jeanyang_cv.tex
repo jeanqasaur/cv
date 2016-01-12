@@ -9,7 +9,7 @@
 \documentclass[10pt,a4paper]{moderncv}
 
 % moderncv themes
-\moderncvtheme[blue, modroman]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[grey, modroman]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
 %\moderncvtheme[green]{classic}                % idem
 
 \usepackage[sc]{mathpazo}
@@ -34,11 +34,14 @@
 \firstname{Jean}
 \familyname{Yang}
 %\title{Resumé title (optional)}               % optional, remove the line if not wanted
-\address{32 Vassar Street, 32-G714}{Cambridge, MA 02139}    % optional, remove the line if not wanted
+\address{Department of Systems Biology\\
+Harvard Medical School\\
+200 Longwood Avenue\\
+Warren Alpert Building 513}{Boston, MA 02115}    % optional, remove the line if not wanted
 %\mobile{mobile (optional)}                    % optional, remove the line if not wanted
 %\phone{phone (optional)}                      % optional, remove the line if not wanted
 %\fax{fax (optional)}                          % optional, remove the line if not wanted
-\email{jeanyang [at] csail [dot] mit [dot] edu}                      % optional, remove the line if not wanted
+\email{jeanyang [at] csail.mit.edu}                      % optional, remove the line if not wanted
 \extrainfo{\footnotesize \url{jeanyang.com}} % optional, remove the line if not wanted
 %\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
 %\quote{Some quote (optional)}                 % optional, remove the line if not wanted
@@ -52,11 +55,11 @@
 \begin{document}
 \maketitle
 
-\section{Research interests}
-\cvline{}{Programming language design, software verification, and security. My research focuses on designing and implementing language constructs that automate program concerns effectively and efficiently.}
+\section{Research Interests}
+\cvline{}{Programming language design, software verification, and security applied to security, privacy, and biological modeling.}
 
 \section{Education}
-\cventry{2010--present}{Ph.D. computer science}{Massachusetts Institute of Technology}
+\cventry{2010--2015}{Ph.D. computer science}{Massachusetts Institute of Technology}
   {Cambridge, MA}{USA}
     {Advisor: Armando Solar-Lezama. Thesis: ``A Framework for Automatically Enforcing Information Flow Policies.''}
 \cventry{2008--2010}{M.S. computer science}{Massachusetts Institute of Technology}
@@ -67,46 +70,13 @@
   {Graduated \emph{Magna Cum Laude}. Senior thesis advised by Greg Morrisett.}
 %\cventry{1997--2004}{Secondary school}{The Ellis School}{Pittsburgh, PA}{USA}{}
 
-\section{Publications}
-\cvline{}{Nikhil Swamy, Juan Chen, C\'{e}dric Fournet, Pierre-Yves Strub, Karthikeyan Bhargavan, and \textbf{Jean Yang}. Secure Distributed Programming with Value-Dependent Types. \emph{Journal of Functional Programming 23(4) (JFP)}, July 2013.}{}
-\cvline{}{Thomas H. Austin, \textbf{Jean Yang}, Cormac Flanagan, and Armando Solar-Lezama. Faceted Execution of Policy-Agnostic Programs. \emph{Programming Languages and Security (PLAS)} 2013.}{}
-\cvline{}{\textbf{Jean Yang}, Kuat Yessenov, and Armando Solar-Lezama. A Language for Automatically Enforcing Privacy Policies. \emph{Principles of Programming Languages (POPL)} 2012.}{}
-\cvline{}{\textbf{Jean Yang} and Chris Hawblitzel. Safe to the Last Instruction: Automated Verification of a Type-Safe Operating System. \emph{Communications of the Association for Computing Machinery (CACM)}, December 2011.}
-\cvline{}{Nikhil Swamy, Juan Chen, C\'{e}dric Fournet, Pierre-Yves Strub, Karthikeyan Bharagavan, and \textbf{Jean Yang}. Secure Distributed Programming with Value-Dependent Types. \emph{International Conference on Functional Programming (ICFP)} 2011.}{}
-\cvline{}{\textbf{Jean Yang} and Chris Hawblitzel. Safe to the Last Instruction: Automated Verification of a Type-Safe Operating System. \emph{Programming Languages Design and Implementation (PLDI)} 2010. \textbf{Best paper award.}}
-
-\section{Awards and honors}
-\cvlistitem{\textbf{Levine Fellowship}, 2014-2015.}
-\cvlistitem{\textbf{Gigam 10 for 2013 Cloud Trailblazers}, 2013.}
-\cvlistitem{\textbf{Facebook Fellowship}, 2012-2013.}
-\cvlistitem{\textbf{Best Paper Award}, Programming Language Design and Implementation (PLDI), 2009.}
-\cvlistitem{\textbf{National Science Foundation Graduate Research Fellowship}, 2008-2011.}
-\cvlistitem{Member, \textbf{Phi Beta Kappa} honor society, inducted May 2008.}
-
-\newpage
-\section{Research talks}
-\cvline{}{\textbf{Jeeves: A Language for Automatically Enforcing Privacy Policies}.}{}
-\cvlistitem{Cornell University (August 2014)}
-\cvlistitem{Columbia University (May 2014)}
-\cvlistitem{Microsoft Research - Cambridge (October 2013)}
-\cvlistitem{Gigaom Structure Conference (June 2013)}
-\cvlistitem{Facebook - Menlo Park (March 2012)}
-\cvlistitem{Google - Mountain View (April 2012)}
-\cvlistitem{University of California, Berkeley (April 2012)}
-\cvlistitem{Brown University (June 2012)}
-\cvlistitem{Tufts University (Colloquium, December 2012)}
-\cvlistitem{New York University (April 2011)}
-\cvlistitem{Google - New York (July 2011)}
-\cvlistitem{Northeastern University (December 2011)}
-\cvlistitem{Harvard University (December 2011)}
-
-\section{Public speaking}
-\cvlistitem{\textbf{Challenging Technical Privilege: How Race and Gender Matter}, MIT (October 2014).}
-\cvlistitem{\textbf{Panel: Graduate School 101}, Scientista Symposium, MIT (April 2013).}
-\cvlistitem{\textbf{Panel: How I Got There}, Women in Advanced Computing (WiAC) Summit, San Jose, CA (June 2013).}
-
-\section{Positions held}
-\subsection{Research}
+\section{Research Experience}
+\cventry{2015-present}{Assistant Professor (Adjunct)}{Carnegie Mellon University}{Pittsburgh, PA}{}
+  {Accepted and deferred faculty position for one year.}
+\cventry{2015-present}{Postdoctoral Researcher}{Harvard Medical School}{Cambridge, MA}{}
+  {Developing program verification and analysis techniques to aid in the construction of rule-based, graphical kinetic models for protein interactions.}
+\cventry{2009-2015}{Research Assistant}{Massachusetts Institute of Technology}{Cambridge, MA}{}
+  {Graduate research.}
 \cventry{Summer 2010}{Research Intern, Programming Languages and Analysis Group}{Microsoft Research}{Redmond, WA}{}
   {Worked with Nikhil Swamy and Juan Chen on extending a security-typed language, to support secure marshalling and cryptographic proofs.}
 %\cventry{2009-2010}{Research Assistant}{MIT CSAIL}{Cambridge, MA}{}
@@ -118,7 +88,7 @@
 \cventry{Summer 2006}{Research Intern}{Computational Biology Initiative, Harvard Medical School}{Boston, MA}{}
   {Worked with Dennis Wall and Leon Peshkin to develop and implement computational processes for tracing evolution and coevolution of presynaptic receptors.}
 %%%
-\subsection{Industry}
+\section{Industry Experience}
 \cventry{Summer 2012}{Software Engineering Intern}{Facebook, Inc.}{Menlo Park, CA}{}{Built verifier for backend privacy language. Filed patent.}
 \cventry{Summer 2008}{Software Engineering Intern}{Peerium, Inc.}{Cambridge, MA}
   {}{Worked at start-up creating a dependently typed functional language written in Haskell.  Created parser for core language; wrote compiler optimizations; worked on GUI libraries.}
@@ -128,7 +98,49 @@
   {}{Worked on data mapping and management project using SQL and ColdFusion.}
 
 \newpage
+\section{Awards and Honors}
+\cvlistitem{\textbf{Levine Fellowship}, 2014-2015.}
+\cvlistitem{\textbf{Gigam 10 for 2013 Cloud Trailblazers}, 2013.}
+\cvlistitem{\textbf{Facebook Fellowship}, 2012-2013.}
+\cvlistitem{\textbf{Best Paper Award}, Programming Language Design and Implementation (PLDI), 2009.}
+\cvlistitem{\textbf{National Science Foundation Graduate Research Fellowship}, 2008-2011.}
+\cvlistitem{Member, \textbf{Phi Beta Kappa} honor society, inducted May 2008.}
+
+\section{Publications}
+\cvline{JFP 2013}{Nikhil Swamy, Juan Chen, C\'{e}dric Fournet, Pierre-Yves Strub, Karthikeyan Bhargavan, and \textbf{Jean Yang}. Secure Distributed Programming with Value-Dependent Types. \emph{Journal of Functional Programming 23(4)}, July 2013.}{}
+\cvline{PLAS 2013}{Thomas H. Austin, \textbf{Jean Yang}, Cormac Flanagan, and Armando Solar-Lezama. Faceted Execution of Policy-Agnostic Programs. \emph{Programming Languages and Security}, 2013.}{}
+\cvline{POPL 2012}{\textbf{Jean Yang}, Kuat Yessenov, and Armando Solar-Lezama. A Language for Automatically Enforcing Privacy Policies. \emph{Principles of Programming Languages}, 2012.}{}
+\cvline{CACM 2011}{\textbf{Jean Yang} and Chris Hawblitzel. Safe to the Last Instruction: Automated Verification of a Type-Safe Operating System. \emph{Communications of the Association for Computing Machinery}, December 2011.}
+\cvline{ICFP 2011}{Nikhil Swamy, Juan Chen, C\'{e}dric Fournet, Pierre-Yves Strub, Karthikeyan Bharagavan, and \textbf{Jean Yang}. Secure Distributed Programming with Value-Dependent Types. \emph{International Conference on Functional Programming}, 2011.}{}
+\cvline{PLDI 2010}{\textbf{Jean Yang} and Chris Hawblitzel. Safe to the Last Instruction: Automated Verification of a Type-Safe Operating System. \emph{Programming Languages Design and Implementation}, 2010. \textbf{Best Paper Award.}}
+
+\section{Research Talks}
+\cvline{}{\textbf{Preventing Information Leaks with Jeeves}}
+\cvlistitem{Columbia University (Special Seminar, February 2015)}
+\cvlistitem{University of California, Berkeley (Special Seminar, March 2015)}
+\cvlistitem{University of Illinois, Urbana-Champaign (Special Seminar, April 2015)}
+\cvlistitem{Carnegie Mellon University (Special Seminar, April 2015)}
+\cvlistitem{Microsoft Research Redmond (April 2015)}
+\cvlistitem{Samsung Research (April 2015)}
+\cvline{}{\textbf{Jeeves: A Language for Automatically Enforcing Privacy Policies}}{}
+\cvlistitem{Cornell University (August 2014)}
+\cvlistitem{Columbia University (May 2014)}
+\cvlistitem{Microsoft Research - Cambridge (October 2013)}
+\cvlistitem{Gigaom Structure Conference (June 2013)}
+\cvlistitem{Tufts University (Colloquium, December 2012)}
+\cvlistitem{Brown University (June 2012)}
+\cvlistitem{University of California, Berkeley (April 2012)}
+\cvlistitem{Google - Mountain View (April 2012)}
+\cvlistitem{Facebook - Menlo Park (March 2012)}
+\cvlistitem{Northeastern University (December 2011)}
+\cvlistitem{Harvard University (December 2011)}
+\cvlistitem{Google - New York (July 2011)}
+\cvlistitem{New York University (April 2011)}
+
+\newpage
 \section{Teaching}
+\cventry{November 2014}{Resident}{Hacker School}{}
+  {}{Spent one week working with students at a free, full-time, immersive school for those seeking to be better programmers. Gave talks; worked with students interested in functional programming and software verification.}
 \cventry{Fall 2012}{Recitation Instructor, Elements of Software Construction}{Massachusetts Institute of Technology}{}
   {}{Designed and taught mini-curriculum for introducing Scala to undergraduate students in course teaching concepts using Java and Python.}
 \cventry{Fall 2010}{Teaching Assistant, Foundations of Program Analysis}{Massachusetts Institute of Technology}{}
@@ -147,24 +159,34 @@
   {Graded problem sets and ran weekly problem session.  Effectiveness rating rating 4.4/5.0.}
 
 \section{Mentoring}
-\subsection{Research mentoring}
-\cvline{2013-2014}{Supervised a Masters of Engineering thesis titled ``Jelf: a Web Framework for Automatic Enforcement of Privacy Policies.''}{}
-\cvline{2011-2012}{Supervised two high school students through MIT's Program for Research in Mathematics, Engineering, and Science (PRIMES).}{}
-\cvline{2009-present}{Supervised term-time, IAP, and summer undergraduates through MIT's Undergraduate Research Opportunities Program (UROP).}{}
-\subsection{Career mentoring}
+\subsection{Students Supervised}
+\cvlistitem{Patrick Long (MIT PRIMES Program, 2011-2012)}
+\cvlistitem{Jesse Klimov (MIT PRIMES Program, 2011-2012)}
+\cvlistitem{Amadu Durham (MIT UROP, spring 2012)}
+\cvlistitem{Benjamin Shaibu (MIT UROP, spring 2012-spring 2013)}
+\cvlistitem{Ariel Jacobs (MIT UROP, spring 2013-summer 2013)}
+\cvlistitem{Travis Hance (MIT M.Eng. thesis, 2014)}
+\cvlistitem{Chelsea Voss (MIT M.Eng. thesis, 2016)}
+
+\subsection{Career Mentoring}
 \cvline{2011-2012}{Served as graduate mentor for undergraduate women in the Society of Women Engineers (SWE) Mentoring Program.}{}
 
-\section{Service and leadership}
-\cvline{Program committees}{
+\section{Service and Leadership}
+\cvline{Conference service}{
   \begin{itemize}
-  \item Principles of Programming Languages Artifact Evaluation Committee (POPL AEC, 2015).
-  \item ML Workshop (2014).
+  \item Co-Chair, Principles of Programming Languages Artifact Evaluation Committee (POPL AEC), 2017.
+  \item Program Committee member, Principles of Programming Languages Student REsearch Competition (POPL SRC), 2016.
+  \item Program Committee member, IEEE Symposium on Security and Privacy (Oakland), 2016.
+  \item Program Committeee member, Programming Language Design and Implementation Program Committee (PLDI), 2016.
+  \item Program Committee member, Principles of Programming Languages Artifact Evaluation Committee (POPL AEC), 2015.
+  \item Program Committee member, ML Workshop, 2014.
   \end{itemize}}
 %%%
-\cvline{Founder, organizer}{\textbf{MIT Programming Languages Seminar}. Started a weekly forum for professors and students to present ideas related to programming languages.  Ran seminar 2010-2011.}{}
-\cvline{}{\textbf{MIT Programming Languages/Software Engineering Research Off-site}. Started annual day-long off-site retreat with the MIT research groups in Programming Languages, Software Engineering, and Human-Computer Interaction. Served on planning committee 2010 and 2011, advised planning for subsequent retreats.}{}
-\cvline{}{\textbf{Graduate Women at MIT}. Co-founded an institute-wide organization with 1500 members (as of spring 2012), over 80 planning committee members, and a budget of over \$20K. Developed constitution and mission, raised funds, established campus collaborations, and recruited members.  Served as Executive Board member from 2009 to present and Planning Co-Chair for two conferences (spring 2010, spring 2011).}{}
-\cvline{}{\textbf{Harvard College Engineering Society}. Founding member 2005-2008; President 2006-2007. Started joint Harvard-MIT team for international competition in the small-size league for autonomous robotic soccer. Raised tens of thousands in budget; recruited dozens of members. Organized community-building activities for the School of Engineering and Applied Sciences.}
+\cvline{Organizations founded}{\textbf{The Cybersecurity Factory}. Started accelerator for early-stage cybersecurity companies with the goal of turning more research ideas into startups. Partnered with venture firm Highland Capital to run pilot program summer 2015. Continued involvement for summer 2016.}{}
+\cvline{}{\textbf{MIT Programming Languages Seminar}. Started a weekly forum for professors and students to present ideas related to programming languages.  Ran seminar 2010-2011.}{}
+\cvline{}{\textbf{MIT Programming Languages and Software Engineering Offsite}. Started annual day-long offsite retreat with the MIT research groups in Programming Languages, Software Engineering, and Human-Computer Interaction. Served on Planning Committee 2010 and 2011; advised planning for subsequent retreats.}{}
+\cvline{}{\textbf{Graduate Women at MIT}. Co-founded institute-wide organization with 1,800 members (as of spring 2014), over 80 planning committee members, and a budget of over \$20K. Developed constitution, raised funds, established campus collaborations, and recruited members.}{}
+\cvline{}{\textbf{Harvard College Engineering Society}. Founding member 2005-2008; President 2006-2007. Started Harvard-MIT team competing in international autonomous robotic soccer competition. Raised tens of thousands of dollars; recruited dozens of members.}{}
 %%
 \cvline{Student representative}{\textbf{MIT EECS Faculty Hiring Committee}. Attended talks, interviewed faculty candidates, and provided feedback on candidates (spring 2013).}
 \cvline{}{\textbf{MIT EECS Visiting Committee}. Selected to provide student perspective on department and student life to the Visiting Committee (2013, 2014).}{}
@@ -182,20 +204,100 @@
 %\cvcomputer{Functional}{Haskell, OCaml/SML, Scheme}{Assembly}{x86, MIPS}
 %\cvcomputer{Verification}{BoogiePL}{Hardware}{Verilog}
 
-\section{Selected press}
-\cvline{}{\textbf{Fast CoExist} (2014): ``A Better Way To Protect Privacy? Take The Programmer Out Of The Equation.'' Jessica Leber, March 7.}{}
-\cvline{}{\textbf{Wired} (2014): ``Out in the Open: A New Programming Language With Built-In Privacy Protocols.'' Klint Finley, March 3.}{}
-\cvline{}{\textbf{Gigaom} (2014): ``Want to build privacy into your apps? Check out Jeeves, now available in Python.'' Barb Darrow, Feb. 11.}{}
-\cvline{}{\textbf{MIT Technology Review} (2014): ``New Programming Language Removes Human Error from Privacy Equation.'' CSAIL, Feb. 10.}{}
-\cvline{}{\textbf{Gigaom} (2013): ``Cloud Trailblazers: 10 for 2013. Mission Possible? Jean Yang.'' Barb Darrow, May 28.} 
-\cvline{}{\textbf{New Scientist} (2012): ``What your online friends reveal about where you are.'' Jacob Aron, January 25.}
-\cvline{}{\textbf{Softpedia} (2010): ``Verve - New non-Windows OS from Microsoft.'' Marius Oiaga, Dec. 10.}
-\cvline{}{\textbf{InfoQ} (2010): ``Announcing Verve - A Type-Safe Operating System.'' James Vastbinder, Dec. 8.}
+\section{Selected Public Speaking}
+\cvlistitem{\textbf{On the Front Lines: New Risks and Knowledge}, panel at \emph{AtlanticLIVE}'s ``Cybersecurity Today'' summit (October 2015).}
+\cvlistitem{\textbf{Cybersecurity: How to Use What We Already Know}, keynote at PrivacySecurityRisk (October 2015).}
+\cvlistitem{\textbf{A Brief History of Programming}, Geek Girl Dinner Boston (December 2014).}
+\cvlistitem{\textbf{A Brief History of Programming}, Women's Coding Collective Boston (December 2014).}
+\cvlistitem{\textbf{An Axiomatic Basis for Computer Programming}, Papers We Love NYC (November 2014).}
+\cvlistitem{\textbf{Challenging Technical Privilege: How Race and Gender Matter}, MIT (October 2014).}
+\cvlistitem{\textbf{Graduate School 101}, panel at Scientista Symposium, MIT (April 2013).}
+\cvlistitem{\textbf{How I Got There}, panel at Women in Advanced Computing (WiAC) Summit, San Jose, CA (June 2013).}
 
-\section{Other interests and activities}
-\cvline{}{I am interested in science communication, especially about computer science and programming languages. Since fall 2013 I have been running \href{http://neuwriteboston.org}{\textbf{NeuWrite Boston}}, a collaborative working group of scientists and writers. We meet once every three weeks to workshop pieces and discuss how to improve the state of science communication. As a result of our collaborations, members have published pieces in national venues.}{}
+\section{Selected Popular Articles}
+\cvline{}{``The Real Software Security Problem is Us.'' Jean Yang, \emph{MIT Technology Review}, June 22, 2015.}{}
+\cvline{}{``C is Manly, Python is for 'n00bs': How False Stereotypes Turn Into Technical 'Truths.''' Jean Yang and Ariel Rabkin, \emph{Model View Culture}, January 20, 2014.}{}
+
+\section{Selected Press}
+\cvline{TechCrunch}{``Coding In The Cloud Era Demands A Structural Rethink To Bake In Securirity And Privacy.'' Natasha Lomas, \emph{TechCrunch}, Sept. 27, 2015.}{}
+\cvline{Wired}{``The Quest to Rescue Security Research from the Ivory Tower.'' Klint Finley, \emph{Wired}, July 2, 2015.}{}
+\cvline{Fortune}{``Cybersecurity Factory Nurtures Early-Stage Startups in a Tough Field.'' Barb Darrow, \emph{Fortune}, June 26, 2015.}{}
+\cvline{Boston Globe}{``MIT Students, Highland Capital, Partner to Launch Cybersecurity Factory.'' Janelle Nanos, \emph{The Boston Globe}, March 31, 2015.}{}
+\cvline{Fast CoExist}{``A Better Way To Protect Privacy? Take The Programmer Out Of The Equation.'' Jessica Leber, \emph{Fast CoExist}, March 7, 2014.}{}
+\cvline{Wired}{``Out in the Open: A New Programming Language With Built-In Privacy Protocols.'' Klint Finley, \emph{Wired}, March 3, 2014.}{}
+\cvline{Gigaom}{``Want to build privacy into your apps? Check out Jeeves, now available in Python.'' Barb Darrow, \emph{Gigaom}, Feb. 11, 2014.}{}
+\cvline{MIT Tech Review}{``New Programming Language Removes Human Error from Privacy Equation.'' MIT CSAIL, \emph{MIT Technology Review}, Feb. 10, 2014.}{}
+\cvline{Gigaom}{``Cloud Trailblazers: 10 for 2013. Mission Possible? Jean Yang.'' Barb Darrow, \emph{Gigaom}, May 28, 2013.} 
+\cvline{New Scientist}{``What your online friends reveal about where you are.'' Jacob Aron, \emph{New Scientist}, January 25, 2012.}
+%\cvline{}{\textbf{Softpedia} (2010): ``Verve - New non-Windows OS from Microsoft.'' Marius Oiaga, Dec. 10.}
+%\cvline{}{\textbf{InfoQ} (2010): ``Announcing Verve - A Type-Safe Operating System.'' James Vastbinder, Dec. 8.}
+
+\section{Patents}
+\cvline{}{Stephen C. Heise, Jean Yang, Dwayne Reeves, and Yiding Jia. Privacy verification tool. US20140282837 A1, filed March 15, 2013.}{}
+\cvline{}{Chris Hawblitzel and Jean Yang. Automated verification of a type-safe operating system. US8341602 B2, filed February 27, 2010 and issued December 25, 2012.}{}
+
+\section{Other Interests and Activities}
+\cvline{}{I am deeply interested in science communication and outreach. From 2013-2015 I ran \href{http://neuwriteboston.org}{\textbf{NeuWrite Boston}}, a collaborative working group of scientists and writers. I am honored to have a chapter written about me in Andi Diehn's children's book, \emph{Technology: Cool Women Who Code}.}{}
 
 \renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+\newcommand{\cvdoublecolumn}[2]{%
+  \cvitem[0.75em]{}{%
+    \begin{minipage}[t]{\listdoubleitemmaincolumnwidth}#1\end{minipage}%
+    \hfill%
+    \begin{minipage}[t]{\listdoubleitemmaincolumnwidth}#2\end{minipage}%
+    }%
+}
+\newcommand{\cvreference}[7]{%
+    \textbf{#1}\newline% Name
+    \ifthenelse{\equal{#2}{}}{}{\addresssymbol~#2\newline}%
+    \ifthenelse{\equal{#3}{}}{}{#3\newline}%
+    \ifthenelse{\equal{#4}{}}{}{#4\newline}%
+    \ifthenelse{\equal{#5}{}}{}{#5\newline}%
+    \ifthenelse{\equal{#6}{}}{}{\emailsymbol~#6\newline}%
+    \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7}}
+
+\newpage
+\section{References}
+
+\cvdoublecolumn{
+  \cvreference{Armando Solar-Lezama}
+    {Department of Electrical Engineering and Computer Science}
+    {Massachusetts Institute of Technology}
+    {}{}
+    {asolar [at] csail.mit.edu}
+    {+1 617 258 9727}%
+    }
+    {\cvreference{Martin Rinard}
+    {Department of Electrical Engineering and Computer Science}
+    {Massachusetts Institute of Technology}
+    {}{}
+    {rinard [at] csail.mit.edu}
+    {+1 617 258 6922}%
+    }
+\bigskip
+\cvdoublecolumn{\cvreference{Greg Morrisett}
+    {School of Engineering and Applied Sciences}
+    {Harvard University}
+    {}{}
+    {greg [at] eecs.harvard.edu}
+    {+1 617 495 2498}
+    }
+    {\cvreference{Michael Hicks}
+    {Department of Computer Science}
+    {University of Maryland}
+    {}{}
+    {mwh [at] cs.umd.edu}
+    {+1 301 405 2710}
+    }
+\bigskip
+\cvdoublecolumn{\cvreference{Chris Hawblitzel}
+    {Microsoft Research Redmond}
+    {}{}{}
+    {chris.hawblitzel [at] microsoft.com}
+    {+1 425 707 7398}
+    }
+    {}
 
 %\section{Extra 2}
 %\cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
