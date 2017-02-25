@@ -1,0 +1,22 @@
+\section{Statement of Goals}
+\subsection{Research Mission}
+\cvline{}{More and more people are programming: not only those with traditional Computer Science backgrounds, but also physical scientists, journalists, and more. We have an unprecedented opportunity to shape how people reason about software--and the systems that people do not yet call software. The goal of my research is to make \emph{provable guarantees ubiquitous}. I am interested in designing 
+\begin{inparaenum}[(1)]
+\item programming models,
+\item language implementation strategies,
+\item programming tools, and
+\item software verification tools
+\end{inparaenum}
+to make it easier for people to create the software they intended.}{}
+
+\subsection{Outreach Mission}
+\cvline{}{Public understanding and consumption determine the impact of research. In addition to educating my students to understand the importance of programming languages research, I am interested in \emph{improving science communication} and \emph{facilitating commercialization of technical ideas}. From 2013-2015 I co-directed NeuWrite Boston, a working group of scientists and science writers. To narrow the gap between academia and industry, I co-founded the Cybersecurity Factory, an accelerator for security startups.}{}
+
+\subsection{Research Directions}
+\cvline{}{I am investigating how the following two programming models can change the way people think about the following two domains, and facilitate the creation of programs and analyses that were previously difficult or impossible.}{}
+\cvlistitem{\textbf{Policy-agnostic programming for security and privacy.} As an alternative to approaches for detecting information leaks, I propose a new programming model that factors out the specification of security and privacy concerns from the rest of the program and enforces the properties \emph{by construction}. In my prior work I designed a language semantics for policy-agnostic programming with \emph{informaton flow policies} and developed dynamic and static enforcement techniques. I am currently interested in
+\begin{inparaenum}[(1)]
+\item extending the approach for statistical privacy and
+\item techniques for retrofitting legacy code with the policy-agnostic model, for purposes of fixing bugs and interacting with new policies and code.
+\end{inparaenum}}
+\cvlistitem{\textbf{Rule-based programming for biological modeling.} Traditionally, researchers model intracellular signalling using systems of ordinary differential equations (ODEs), but there are two problems with ODE models. First, a precise model requires a different ODE for each interaction between agents, causing ODE models to scale poorly with respect to number of agent types. Second, ODE models have little structure that we can exploit for scale-mitigating analyses. As an alternative, rule-based languages allow the representation of models as programs describing rewrites over graphs, where nodes correspond to proteins and edges describe protein complexes. Not only are these programs more concise than the corresponding ODE systems, but their structure also supports various analyses that are otherwise not possible. My current work focuses on analyzing \emph{causal relationships} between rules, and combining causal information with language design and model-checking techniques to create biologically relevant model analyses.}

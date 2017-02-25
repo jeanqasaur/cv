@@ -31,6 +31,8 @@
 \setlength{\textheight}{\textheight+0.5in}
 \usepackage{layout}
 
+\usepackage{paralist}
+
 % personal data
 \firstname{Jean}
 \familyname{Yang}
@@ -55,38 +57,17 @@ Carnegie Mellon University\\
 \begin{document}
 \maketitle
 
-\section{Research Interests}
-\cvline{}{My research focuses on programming language design and formal methods applied to security, privacy, and biological modeling.}
-
-\section{Education}
-\cventry{2010--2015}{Ph.D. computer science}{Massachusetts Institute of Technology}
-  {Cambridge, MA}{USA}
-    {Advisor: Armando Solar-Lezama. Thesis: ``A Framework for Automatically Enforcing Information Flow Policies.''}
-\cventry{2008--2010}{M.S. computer science}{Massachusetts Institute of Technology}
-  {Cambridge, MA}{USA}
-  {Advisor: Armando Solar-Lezama. Thesis: ``Specification-Enhanced Programming.''}
-\cventry{2004--2008}{A.B. computer science}{Harvard University}
-  {Cambridge, MA}{USA}
-  {Graduated \emph{Magna Cum Laude}. Senior thesis advised by Greg Morrisett.}
-%\cventry{1997--2004}{Secondary school}{The Ellis School}{Pittsburgh, PA}{USA}{}
-
-\section{Awards and Honors}
-\cvlistitem{\textbf{\emph{MIT Technology Review} Innovators Under 35}, 2016.}
-\cvlistitem{\textbf{Paul L. Penfield Student Service Award}, 2015.}
-\cvlistitem{\textbf{Levine Fellowship}, 2014-2015.}
-\cvlistitem{\textbf{Gigam 10 for 2013 Cloud Trailblazers}, 2013.}
-\cvlistitem{\textbf{Facebook Fellowship}, 2012-2013.}
-\cvlistitem{\textbf{Best Paper Award}, Programming Language Design and Implementation (PLDI), 2009.}
-\cvlistitem{\textbf{National Science Foundation Graduate Research Fellowship}, 2008-2011.}
-\cvlistitem{Member, \textbf{Phi Beta Kappa} honor society, inducted May 2008.}
+\input{research_interests}
 
 \input{employment}
-\input{teaching}
-\input{advising}
-\input{service}
-\input{support}
-\input{artifacts}
+\input{education}
+\input{honors}
 \input{publications}
+\input{artifacts}
+\input{service}
+\input{advising}
+\input{support}
+\input{teaching}
 \input{speaking}
 
 %\section{Languages}
@@ -99,34 +80,16 @@ Carnegie Mellon University\\
 %\cvcomputer{Functional}{Haskell, OCaml/SML, Scheme}{Assembly}{x86, MIPS}
 %\cvcomputer{Verification}{BoogiePL}{Hardware}{Verilog}
 
-\section{Selected Popular Articles}
-\cvline{}{``Building privacy right into software code,'' \emph{The Conversation}, February 20, 2017.}{}
-\cvline{}{``Research for Practice: Web Security and Mobile Web Computing,'' \emph{ACM Queue}, October 4, 2016.}{}
-\cvline{}{``Making It Easy to Make Apps.'' Jean Yang, \emph{MIT Technology Review}, June 21, 2016.}{}
-\cvline{}{``The Real Software Security Problem is Us.'' Jean Yang, \emph{MIT Technology Review}, June 22, 2015.}{}
-\cvline{}{``C is Manly, Python is for 'n00bs': How False Stereotypes Turn Into Technical 'Truths.''' Jean Yang and Ariel Rabkin, \emph{Model View Culture}, January 20, 2014.}{}
-
-\section{Selected Press}
-\cvline{MIT Tech Review}{``Why don't computers keep our personal data secure by default?'' Patrick Doyle, \emph{MIT Technology Review}, August 23, 2016.}{}
-\cvline{TechCrunch}{``Coding In The Cloud Era Demands A Structural Rethink To Bake In Securirity And Privacy.'' Natasha Lomas, \emph{TechCrunch}, Sept. 27, 2015.}{}
-\cvline{Wired}{``The Quest to Rescue Security Research from the Ivory Tower.'' Klint Finley, \emph{Wired}, July 2, 2015.}{}
-\cvline{Fortune}{``Cybersecurity Factory Nurtures Early-Stage Startups in a Tough Field.'' Barb Darrow, \emph{Fortune}, June 26, 2015.}{}
-\cvline{Boston Globe}{``MIT Students, Highland Capital, Partner to Launch Cybersecurity Factory.'' Janelle Nanos, \emph{The Boston Globe}, March 31, 2015.}{}
-\cvline{Fast CoExist}{``A Better Way To Protect Privacy? Take The Programmer Out Of The Equation.'' Jessica Leber, \emph{Fast CoExist}, March 7, 2014.}{}
-\cvline{Wired}{``Out in the Open: A New Programming Language With Built-In Privacy Protocols.'' Klint Finley, \emph{Wired}, March 3, 2014.}{}
-\cvline{Gigaom}{``Want to build privacy into your apps? Check out Jeeves, now available in Python.'' Barb Darrow, \emph{Gigaom}, Feb. 11, 2014.}{}
-\cvline{MIT Tech Review}{``New Programming Language Removes Human Error from Privacy Equation.'' MIT CSAIL, \emph{MIT Technology Review}, Feb. 10, 2014.}{}
-\cvline{Gigaom}{``Cloud Trailblazers: 10 for 2013. Mission Possible? Jean Yang.'' Barb Darrow, \emph{Gigaom}, May 28, 2013.} 
-\cvline{New Scientist}{``What your online friends reveal about where you are.'' Jacob Aron, \emph{New Scientist}, January 25, 2012.}
-%\cvline{}{\textbf{Softpedia} (2010): ``Verve - New non-Windows OS from Microsoft.'' Marius Oiaga, Dec. 10.}
-%\cvline{}{\textbf{InfoQ} (2010): ``Announcing Verve - A Type-Safe Operating System.'' James Vastbinder, Dec. 8.}
-
-\section{Patents}
-\cvline{}{Stephen C. Heise, \textbf{Jean Yang}, Dwayne Reeves, and Yiding Jia. Privacy verification tool. US20140282837 A1, filed March 15, 2013 and issued April 14, 2015.}{}
-\cvline{}{Chris Hawblitzel and \textbf{Jean Yang}. Automated verification of a type-safe operating system. US8341602 B2, filed February 27, 2010 and issued December 25, 2012.}{}
+\input{writing}
+\input{media}
 
 \section{Other Interests and Activities}
-\cvline{}{I am deeply interested in science communication and outreach. From 2013-2015 I ran \href{http://neuwriteboston.org}{\textbf{NeuWrite Boston}}, a collaborative working group of scientists and writers. As I am particularly interested in getting young girls excited about STEM, I am honored to have a chapter written about me in Andi Diehn's children's book, \emph{Technology: Cool Women Who Code}.}{}
+\cvline{}{My interests in programming language design and software verification come from a desire to empower. For similar reasons I am interested in promoting equal opportunity in science, technology, engineering, and mathematics (STEM) fields, as well as science communication and outreach. My main activities have been as follows:}{}
+\cvlistitem{In 2009 I co-founded \textbf{Graduate Women at MIT}, an organization that, as of spring 2014, had 1,800 mailing list members, over 80 planning committee members, and an annual budget of over \$20K involved in its three flagship activities: the fall Leadership Conference, the Spring Empowerment conference, and a year-round mentoring program. We won the William L. Steward, Jr. Award for ``outstanding contributions'' to extracurricular activities.}
+\cvlistitem{In 2010 I started the \textbf{MIT Programming Languages and Software Engineering Offsite}, now an annual mini-conference of the 6+ research groups working in related areas at MIT.}
+\cvlistitem{From 2013-2015 I ran \href{http://neuwriteboston.org}{\textbf{NeuWrite Boston}}, a collaborative working group of scientists and writers, with Amanda Gefter, author of \emph{Trespassing on Einstein's Lawn}.}
+
+\cvline{}{As an undergraduate at Harvard I co-founded the Harvard College Engineering Society, an activity that involved starting the RoboCup team for competing in autonomous soccer competitions. I am happy to see that the team remains active today.}{}
 
 \renewcommand{\listitemsymbol}{-} % change the symbol for lists
 
